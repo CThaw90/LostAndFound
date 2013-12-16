@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:text="@string/update_profile_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+	    android:textStyle="bold"
+	    android:textSize="20sp"/>
+    
+	<EditText
+	    android:id="@+id/updateName"
+	    android:hint="@string/edit_user_name"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="15sp"
+	    android:paddingLeft="10dp"
+        android:paddingTop="5dp"/>
+	
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    
+	<ImageButton
+	    android:contentDescription="@string/hello_world"
+	    android:layout_height="match_parent"
+	    android:id="@+id/changeProfilePic"
+	    android:src="@drawable/ic_launcher"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_weight="0.70"
+	    android:layout_width="0dp"/>
+	
+	<LinearLayout
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_width="0dp"
+	    android:layout_weight="1">
+	    
+	    <TextView
+	        android:text="@string/username_title"
+	        android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:paddingLeft="10dp"
+        	android:paddingTop="10dp"
+       		android:textStyle="bold" 
+       		android:textSize="17sp"/>
+	    
+	    <TextView
+	        android:id="@+id/setUpdateUsername"
+	        android:layout_height="wrap_content"
+        	android:text="@string/hello_world"
+        	android:layout_width="fill_parent"
+        	android:paddingLeft="10dp"
+        	android:paddingTop="5dp"/>
+	    
+	    <TextView
+	        android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:text="@string/email_title"
+        	android:paddingLeft="10dp"
+        	android:paddingTop="10dp"
+        	android:textStyle="bold"
+        	android:textSize="17sp"/>
+	    
+	    <EditText 
+	        android:hint="@string/edit_user_email"
+	        android:inputType="textEmailAddress"
+	        android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:id="@+id/updateEmail"
+        	android:paddingLeft="10dp"
+        	android:paddingTop="5dp"/>
+	    
+	</LinearLayout>
+   
+</LinearLayout>
+
+	<TextView
+	    android:text="@string/change_profile_pic"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="12dp"
+	    android:textColor="#0000FF"
+	    android:textStyle="italic"/>
+
+	<TextView
+	    android:text="@string/address_title"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:paddingTop="10dp"
+	    android:textSize="17sp"
+	    android:gravity="center"
+	    android:textStyle="bold"/>
+	
+	<EditText
+	    android:layout_gravity="center_horizontal"
+	    android:hint="@string/edit_user_address"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/updateAddress"
+	    android:paddingTop="10dp"/>
+	
+	<TextView
+	    android:layout_gravity="center_horizontal"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="@string/phone_title"
+	    android:paddingTop="10dp"
+	    android:textStyle="bold"
+	    android:textSize="17sp"/>
+	
+	<EditText
+	    android:hint="@string/edit_user_phoneNumer"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/updatePhoneNumber"
+	    android:layout_width="wrap_content"
+	    android:paddingBottom="10dp"
+	    android:inputType="phone"
+	    android:paddingTop="10dp"/>
+	
+	<Button
+	    android:text="@string/update_profile_button"
+	    android:layout_gravity="center_horizontal"
+	    android:id="@+id/updateProfileButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="20dp"/>
+
+</LinearLayout>

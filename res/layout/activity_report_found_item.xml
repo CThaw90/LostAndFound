@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="@string/found_item_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+    
+	<EditText 
+	    android:layout_gravity="center_horizontal"
+	    android:hint="@string/item_name_hint"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/foundItemName"
+	    android:layout_margin="10dp"
+	    android:padding="10dp"/>
+
+	
+	<EditText
+	    android:hint="@string/location_found_hint"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/foundLocation"
+	    android:layout_margin="10dp"
+	    android:padding="10dp"/>
+	
+	<EditText
+	    android:id="@+id/foundDescription"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:inputType="text|textMultiLine"
+	    android:hint="@string/description_hint"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_margin="10dp"
+	    android:padding="10dp"/>
+	
+	<Button
+	    android:id="@+id/foundReportButton"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="@string/report_button"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_margin="10dp"
+	    android:padding="10dp"/>
+</LinearLayout>

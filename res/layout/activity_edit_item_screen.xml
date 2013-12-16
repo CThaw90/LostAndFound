@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemScreenScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+<!--     
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"> 
+-->
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+    
+    <EditText
+	    android:id="@+id/editItemProfileName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerInParent="true"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="5dp"
+	    android:textStyle="bold|italic"
+	    android:hint="@string/item_name"
+	    android:textSize="18sp"/>
+    
+	<ImageView
+	    android:contentDescription="@string/app_name"
+	    android:layout_below="@id/editItemProfileName"
+	    android:layout_centerInParent="true"
+	    android:src="@drawable/ic_launcher"
+	    android:id="@+id/editItemProfileImage"
+	    android:layout_width="140dp"
+	    android:layout_height="154dp"/>
+	
+	<TextView
+	    android:layout_below="@id/editItemProfileImage"
+	    android:layout_alignParentLeft="true"
+	    android:id="@+id/itemProfileStatusTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_status"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/editItemProfileImage"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/editItemProfileOwnedBy"
+	    android:text="@string/owner_title"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toLeftOf="@id/editItemProfileOwnedBy"
+	    android:layout_below="@id/editItemProfileImage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/owner_title"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/itemProfileStatusTitle"
+	    android:layout_below="@id/editItemProfileImage"
+	    android:id="@+id/editItemProfileStatus"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_status"
+	    android:layout_margin="5dp"
+	    android:textStyle="italic"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/editItemProfileStatus"
+	    android:id="@+id/editItemProfileLocationTitle"
+	    android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_location"
+	    android:layout_gravity="center"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<EditText
+	    android:layout_toRightOf="@id/editItemProfileLocationTitle"
+	    android:layout_below="@id/editItemProfileStatus"
+	    android:id="@+id/editItemProfileLocation"
+	    android:hint="@string/item_location"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/editItemProfileLocation"
+	    android:id="@+id/editItemProfileDescriptionTitle"
+	    android:layout_alignParentLeft="true"
+	    android:text="@string/item_description"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<EditText
+	    android:layout_toRightOf="@id/editItemProfileDescriptionTitle"
+	    android:layout_below="@id/editItemProfileLocation"
+	    android:id="@+id/editItemProfileDescription"
+	    android:hint="@string/item_description"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/editItemProfileDescription"
+	    android:id="@+id/editItemProfileFoundByTitle"
+	    android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_foundBy"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/editItemProfileFoundByTitle"
+	    android:layout_below="@id/editItemProfileDescription"
+	    android:id="@+id/editItemProfileFoundBy"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_foundBy"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<TextView 
+	    android:layout_below="@id/editItemProfileFoundByTitle"
+	    android:id="@+id/editItemProfileReportCreatedTitle"
+	    android:layout_alignParentLeft="true"
+	    android:text="@string/item_reported"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/editItemProfileReportCreatedTitle"
+	    android:layout_below="@id/editItemProfileFoundByTitle"
+	    android:id="@+id/editItemProfileReportCreated"
+	    android:text="@string/item_reported"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:layout_below="@id/editItemProfileReportCreatedTitle"
+	    android:text="@string/edit_update_button"
+	    android:id="@+id/editItemUpdateButton"
+	    android:layout_centerInParent="true"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="italic"
+	    android:textSize="14sp"/>
+	
+</RelativeLayout>
+<!-- </LinearLayout> -->
+<!-- 	
+	private Button itemProfileFinishButton;
+	private Button itemProfileViewUserButton;
+	private Button itemProfileEditButton;
+	private Button itemProfileDeleteButton;
+	private Button itemProfileEmailButton;
+	private Button itemProfileFoundButton; -->
+</ScrollView>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight" 
+    android:padding="6dip">
+
+    <ImageView
+        android:id="@+id/listItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/ic_launcher"/>
+    
+    <TextView 
+        android:id="@+id/listItemName"
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/listItemImage"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:text="@string/hello_world"
+        android:textSize="16sp"/>
+    
+    <TextView
+        android:id="@+id/listItemStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listItemName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/listItemImage"
+        android:gravity="center_vertical"
+        android:text="@string/item_description"
+        android:textSize="12.5sp"/>
+</RelativeLayout>

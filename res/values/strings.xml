@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LostAndFound</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="username_hint">Enter Username</string>
+    <string name="register_button">Click to Register</string>
+    <string name="finish_button">Finish Debugging!</string>
+    <string name="confirm_hint">Confirm Password</string>
+    <string name="login_title">Login!</string>
+    <string name="login_button">Login</string>
+    <string name="login_username">Enter Username:</string>
+    <string name="login_password">Enter Password:</string>
+    <string name="goto_register">Click Here to Register!</string>
+    <string name="or">OR</string>
+    <string name="goto_login">Click Here to Login</string>
+    <string name="report_lost_item">Report A Lost Item</string><string name="report_found_item">Report A Found Item</string>
+    
+    <string name="recent_reports">Recent Reports</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_items">My Items</string>
+    <string name="main_menu_title">Main Menu: Select An Activity</string>
+    <string name="item_name">My Item Name</string>
+    <string name="item_status">Status:</string>
+    <string name="item_description">Descritpion</string>
+    <string name="search_hint">Search Item</string>
+    <string name="register_title">Register Here</string>
+    <string name="name_hint">Enter A Name</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="main_menu_back_button">Go Back</string>
+    <string name="view_my_items">My Reported Items</string>
+    <string name="edit_profile_hint">Click to Edit Profile</string>
+    <string name="username_title">Username</string>
+    <string name="email_title">Email</string>
+    <string name="address_title">Street Address </string>
+    <string name="phone_title">Phone Number</string>
+    <string name="lost_item_title">Report a Lost Item</string>
+    <string name="found_item_title">Report a Found Item</string>
+    <string name="item_name_hint">Enter Item Name</string>
+    <string name="location_lost_hint">Enter Location Lost (Optional)</string>
+    <string name="description_hint">Enter a description of the item</string>
+    <string name="report_button">Report Item</string>
+    <string name="edit_user_name">Enter New Name</string>
+    <string name="edit_user_email">Enter New Email</string>
+    <string name="edit_user_phoneNumer">Enter New Phone Number</string>
+    <string name="edit_user_address">Enter New Address</string>
+    <string name="update_profile_button">Update Profile</string>
+    <string name="change_profile_pic">Change Profile Pic</string>
+    <string name="update_profile_title">Update Your User Profile</string>
+    <string name="location_found_hint">Enter the Location Found</string>
+    <string name="search_items_button">Search Items</string>
+    <string name="item_location">Location Lost or Found</string>
+    <string name="item_reported">Report Created</string>
+    <string name="item_foundBy">Found By</string>
+    <string name="item_screen_button">Go Back</string>
+    <string name="recent_reports_title">Recent Reports (past 24 hrs)</string>
+    <string name="owner_title">Owned By</string>
+    <string name="search_results_title">Search Results</string>
+    <string name="item_screen_edit_button">Edit Item</string>
+    <string name="item_screen_delete_button">Delete Item</string>
+    <string name="item_view_user_button">User Profile</string>
+    <string name="item_screen_email_button">Send Email</string>
+    <string name="item_screen_found_button">I Found It!</string>
+    <string name="item_profile_foundBy_button">Who Found It</string>
+    <string name="edit_update_button">Update Item Report</string>
+    <string name="claimed_item_title">Claimed By</string>
+    <string name="item_not_claimed">Item not Claimed</string>
+    <string name="item_screen_claim_button">Thats Mine!</string>
+
+</resources>

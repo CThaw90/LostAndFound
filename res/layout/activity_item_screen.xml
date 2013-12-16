@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemScreenScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+    
+    <TextView
+	    android:id="@+id/itemProfileName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerInParent="true"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="5dp"
+	    android:textStyle="bold|italic"
+	    android:text="@string/item_name"
+	    android:textSize="18sp"/>
+    
+	<ImageView
+	    android:contentDescription="@string/app_name"
+	    android:layout_below="@id/itemProfileName"
+	    android:layout_centerInParent="true"
+	    android:src="@drawable/ic_launcher"
+	    android:id="@+id/itemProfileImage"
+	    android:layout_width="140dp"
+	    android:layout_height="154dp"/>
+	
+	<TextView
+	    android:layout_below="@id/itemProfileImage"
+	    android:layout_alignParentLeft="true"
+	    android:id="@+id/itemProfileStatusTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_status"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/itemProfileImage"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/itemProfileOwnedBy"
+	    android:text="@string/owner_title"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/itemProfileImage"
+	    android:layout_toLeftOf="@id/itemProfileOwnedBy"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/owner_title"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/itemProfileStatusTitle"
+	    android:layout_below="@id/itemProfileImage"
+	    android:id="@+id/itemProfileStatus"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_status"
+	    android:layout_margin="5dp"
+	    android:textStyle="italic"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/itemProfileStatus"
+	    android:id="@+id/itemProfileLocationTitle"
+	    android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_location"
+	    android:layout_gravity="center"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/itemProfileLocationTitle"
+	    android:layout_below="@id/itemProfileStatus"
+	    android:id="@+id/itemProfileLocation"
+	    android:text="@string/item_location"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/itemProfileLocation"
+	    android:id="@+id/itemProfileDescriptionTitle"
+	    android:layout_alignParentLeft="true"
+	    android:text="@string/item_description"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/itemProfileDescriptionTitle"
+	    android:layout_below="@id/itemProfileLocation"
+	    android:id="@+id/itemProfileDescription"
+	    android:text="@string/item_description"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_below="@id/itemProfileDescription"
+	    android:id="@+id/itemProfileFoundByTitle"
+	    android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_foundBy"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView 
+	    android:layout_below="@id/itemProfileDescription"
+	    android:id="@+id/itemProfileClaimedByTitle"
+	    android:text="@string/claimed_item_title"
+	    android:layout_alignParentLeft="true"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:layout_toRightOf="@id/itemProfileClaimedByTitle"
+	    android:layout_below="@id/itemProfileDescription"
+	    android:id="@+id/itemProfileClaimedByButton"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="@string/app_name"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/itemProfileClaimedByTitle"
+	    android:layout_below="@id/itemProfileDescription"
+	    android:id="@+id/itemProfileClaimedByNoOne"
+	    android:text="@string/item_not_claimed"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/itemProfileFoundByTitle"
+	    android:layout_below="@id/itemProfileDescription"
+	    android:id="@+id/itemProfileFoundBy"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/item_foundBy"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:layout_toRightOf="@id/itemProfileFoundByTitle"
+	    android:layout_below="@id/itemProfileDescription"
+	    android:id="@+id/itemProfileWhoFoundButton"
+	    android:text="@string/item_profile_foundBy_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="12.5sp"/>
+	
+	<TextView 
+	    android:layout_below="@id/itemProfileWhoFoundButton"
+	    android:id="@+id/itemProfileReportCreatedTitle"
+	    android:layout_alignParentLeft="true"
+	    android:text="@string/item_reported"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="bold"
+	    android:textSize="14sp"/>
+	
+	<TextView
+	    android:layout_toRightOf="@id/itemProfileReportCreatedTitle"
+	    android:layout_below="@id/itemProfileWhoFoundButton"
+	    android:id="@+id/itemProfileReportCreated"
+	    android:text="@string/item_reported"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textStyle="normal"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:layout_below="@id/itemProfileReportCreatedTitle"
+	    android:text="@string/item_screen_button"
+	    android:layout_alignParentLeft="true"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:id="@+id/finishItemScreen"
+	    android:layout_margin="5dp"
+	    android:textStyle="italic"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:text="@string/item_screen_edit_button"
+	    android:layout_below="@id/finishItemScreen"
+	    android:id="@+id/itemProfileEditButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textStyle="italic"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+
+	<Button
+	    android:layout_below="@id/itemProfileReportCreatedTitle"
+	    android:layout_toRightOf="@id/finishItemScreen"
+	    android:id="@+id/itemProfileViewUserButton"
+	    android:text="@string/item_view_user_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp" />
+	
+	<Button 
+	    android:layout_below="@id/itemProfileViewUserButton"
+	    android:text="@string/item_screen_delete_button"
+	    android:id="@+id/itemProfileDeleteButton"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:id="@+id/itemProfileEmailButton"
+	    android:text="@string/item_screen_email_button"
+	    android:layout_below="@id/finishItemScreen"
+	    android:layout_centerInParent="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:layout_below="@id/itemProfileReportCreatedTitle"
+	    android:text="@string/item_screen_found_button"
+	    android:id="@+id/itemProfileFoundButton"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+	
+	<Button
+	    android:layout_below="@id/itemProfileReportCreatedTitle"
+	    android:text="@string/item_screen_claim_button"
+	    android:id="@+id/itemProfileClaimItButton" 
+	    android:layout_alignParentRight="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:textSize="14sp"/>
+
+</RelativeLayout>
+
+</ScrollView>
